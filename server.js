@@ -11,7 +11,7 @@ app.use(exp.json());
 
 //  app.use(cookie());
  app.use(cors({
-     origin:"https://radical-emp.netlify.app/",
+     origin:"http://localhost:5173",
     methods:["GET","PUT","POST","PATCH","DELETE"],
     credentials:true,
 
@@ -35,7 +35,7 @@ app.use('/employee',emprouter);
    
 //});
 
-mongoose.connect("mongodb+srv://ppriyadharshini621:ppriyadharshini621@cluster0.9ke3v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then((res) => {
+mongoose.connect("mongodb://localhost:27017/").then((res) => {
     console.log("Successful");
     app.listen(port, () => {
         
