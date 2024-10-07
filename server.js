@@ -21,19 +21,6 @@ app.use('/employee',emprouter);
 
 
 
-// app.listen(port, () => {
-//     console.log("Server Running");
-// });
-
-// mongoose.connect('mongodb+srv://prinkaleo124:qs5enFvfUEaV5TMi@cluster0.adpml.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then((res) => {
-//     console.log("Successful");
-//     app.listen(port, () => {
-//         console.log("Server Running");
-//     });
-// }).catch((err) => {
-//     console.log(err);
-   
-//});
 
 mongoose.connect("mongodb://localhost:27017/").then((res) => {
     console.log("Successful");
