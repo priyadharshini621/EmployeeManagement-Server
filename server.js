@@ -11,7 +11,7 @@ app.use(exp.json());
 
 //  app.use(cookie());
  app.use(cors({
-     origin:"http://localhost:5173",
+     origin:"https://radical-emp.netlify.app/",
     methods:["GET","PUT","POST","PATCH","DELETE"],
     credentials:true,
 
